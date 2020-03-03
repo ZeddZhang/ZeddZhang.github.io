@@ -6,14 +6,27 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2020 | 张泽的博客</title>
+  <title>Vivado警告归集 | 张泽的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="张泽的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2020/index.html">
+  <meta name="description" content="VIVADO警告归集WARNING: [Timing 38-316]https://forums.xilinx.com/t5/Synthesis/WARNING-Timing-38-316/td-p/829518
+确认无影响后，可忽略。
+You can safely ignore this warning. 
+The warning is saying that the IP OOC synthe">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vivado警告归集">
+<meta property="og:url" content="http://yoursite.com/2020/03/03/Vivado警告归集/index.html">
 <meta property="og:site_name" content="张泽的博客">
+<meta property="og:description" content="VIVADO警告归集WARNING: [Timing 38-316]https://forums.xilinx.com/t5/Synthesis/WARNING-Timing-38-316/td-p/829518
+确认无影响后，可忽略。
+You can safely ignore this warning. 
+The warning is saying that the IP OOC synthe">
+<meta property="og:updated_time" content="2020-03-03T15:06:11.316Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="张泽的博客">
+<meta name="twitter:title" content="Vivado警告归集">
+<meta name="twitter:description" content="VIVADO警告归集WARNING: [Timing 38-316]https://forums.xilinx.com/t5/Synthesis/WARNING-Timing-38-316/td-p/829518
+确认无影响后，可忽略。
+You can safely ignore this warning. 
+The warning is saying that the IP OOC synthe">
   
     <link rel="alternative" href="/atom.xml" title="张泽的博客" type="application/atom+xml">
   
@@ -149,103 +162,188 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-Vivado警告归集" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      Vivado警告归集
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/03/Vivado警告归集/" class="archive-article-date">
+
+        
+        <a href="/2020/03/03/Vivado警告归集/" class="archive-article-date">
   	<time datetime="2020-03-03T15:05:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-03</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/03/Vivado警告归集/">Vivado警告归集</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="VIVADO警告归集"><a href="#VIVADO警告归集" class="headerlink" title="VIVADO警告归集"></a>VIVADO警告归集</h1><h2 id="WARNING-Timing-38-316"><a href="#WARNING-Timing-38-316" class="headerlink" title="WARNING: [Timing 38-316]"></a>WARNING: [Timing 38-316]</h2><p><a href="https://forums.xilinx.com/t5/Synthesis/WARNING-Timing-38-316/td-p/829518" target="_blank" rel="external">https://forums.xilinx.com/t5/Synthesis/WARNING-Timing-38-316/td-p/829518</a></p>
+<p>确认无影响后，可忽略。</p>
+<p>You can safely ignore this warning. </p>
+<p>The warning is saying that the IP OOC synthesis is running with clock constrained to 100 ns whereas during top level synthesis and implementation the clock is constrained to 5 ns. </p>
+<p>Here you will see _ooc.xdc file is only read during IP OOC synthesis whereas normal IP XDC is read in tol level synthesis and implementation. </p>
+<p>For your reference, you can have a look into this <a href="https://forums.xilinx.com/t5/BRAM-FIFO/what-is-the-difference-between-lt-IP-xdc-gt-and-lt-IP-ooc-xdc-gt/td-p/669099" target="_blank" rel="external">thread</a>.</p>
+<h2 id="WARNING-Synth-8-3848"><a href="#WARNING-Synth-8-3848" class="headerlink" title="WARNING: [Synth 8-3848]"></a>WARNING: [Synth 8-3848]</h2><p>确认无影响后，可忽略。</p>
+<p>You can safely ignore these warnings., i think these can be ignored as long as your design is functional.</p>
+<p>I have seen these warning in couple of scenarios and the design is functional and the warning doesn’t effect the functionality.</p>
+<p><a href="https://forums.xilinx.com/t5/Synthesis/Warning-Synth-8-3848-Net-RSTA-BUSY-does-not-have-driver/td-p/715274" target="_blank" rel="external">https://forums.xilinx.com/t5/Synthesis/Warning-Synth-8-3848-Net-RSTA-BUSY-does-not-have-driver/td-p/715274</a></p>
+<h2 id="WARNING-Synth-8-3331"><a href="#WARNING-Synth-8-3331" class="headerlink" title="WARNING: [Synth 8-3331]"></a>WARNING: [Synth 8-3331]</h2><p>该警告是Vivado提示有未连接的内部信号，需要每个信号确认确实不连接后，可忽略该警告。</p>
+<h2 id="WARNING-Synth-8-3295"><a href="#WARNING-Synth-8-3295" class="headerlink" title="WARNING: [Synth 8-3295]"></a>WARNING: [Synth 8-3295]</h2><p>内部引脚未被驱动，然后被赋予一个常量。</p>
+<p>确认信号和对应赋予的常量可接受后，可忽略该警告。</p>
+<h2 id="WARNING-Synth-8-350"><a href="#WARNING-Synth-8-350" class="headerlink" title="WARNING: [Synth 8-350]"></a>WARNING: [Synth 8-350]</h2><p>该警告是Vivado提示外部接口有未连接的port，确认后可忽略该警告。</p>
+<h2 id="WARNING-Constraints-18-5210"><a href="#WARNING-Constraints-18-5210" class="headerlink" title="WARNING: Constraints 18-5210"></a>WARNING: Constraints 18-5210</h2><p>该警告再确认确实没有约束文件后，可以忽略或补充约束文件。</p>
+<p>This WARNING message is expected when there is no constraints in top-level related to those cells.</p>
+<p>You can safely ignore it. </p>
+<h2 id="WARNING-IP-FLOW-19-4995"><a href="#WARNING-IP-FLOW-19-4995" class="headerlink" title="WARNING: IP_FLOW 19-4995"></a>WARNING: IP_FLOW 19-4995</h2><p>工程路径过长，Windows目录有长度限制。</p>
+<h2 id="WARNING-XPM-CDC-SINGLE-TCL-1000"><a href="#WARNING-XPM-CDC-SINGLE-TCL-1000" class="headerlink" title="WARNING: XPM_CDC_SINGLE: TCL-1000"></a>WARNING: XPM_CDC_SINGLE: TCL-1000</h2><p>Vivado认为某个例化是没有必要的，并且造成的为满足约束条件，布局布线更加困难，并造成更大的延迟。</p>
+<p>处理方法：根据实际情况判定，如下方案例所示，若报错点位于某个IP内部，那么此处是无法修改的。</p>
+<p>举例：</p>
+<p>The source and destination clocks are the same.<br>     Instance: design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pl_received_hot_rst_cdc<br>  This will add unnecessary latency to the design. Please check the design for the following:<br> 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules.<br> 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.<br> [“C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl”:5]</p>
+<h2 id="WARNING-DRC-REQP-1839"><a href="#WARNING-DRC-REQP-1839" class="headerlink" title="WARNING: DRC REQP-1839"></a>WARNING: DRC REQP-1839</h2><p>该警告是对RAMB36的引脚寄存器使用的置位/复位方法进行检查。</p>
+<p>此处建议使用同步复位。</p>
+<h2 id="Re-BlockRam-Warning"><a href="#Re-BlockRam-Warning" class="headerlink" title="Re: BlockRam Warning"></a>Re: BlockRam Warning</h2><p>Please ignore my previous post Here is explanation for this warning</p>
+<p>A new BRAM DRC (REQP-1839, REQP-1840) is in place starting Vivado 2015.1 as a result of AR42571.</p>
+<p>Here is a sample of the messages:</p>
+<p>‘The RAMB18E1 samp_ram_i0/mem_array_reg has an input control pin samp_ram_i0/mem_array_reg/RSTREGB (net: samp_ram_i0/rst_clk_samp) which is driven by a register (rst_gen_i0/reset_bridge_clk_samp_i0/rst_dst_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.’</p>
+<p>In most cases, the simplest response will be to just ignore this message for the test case. However, this may represent an issue for the intent of some designs, hence this alert. </p>
+<p>Alternatively, the message can be disabled. This can be accomplished by adding the following to the tests run .tcl script</p>
+<figure class="highlight tcl"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">set_property SEVERITY Warning [get_drc_checks REQP<span class="number">-1839</span>] note: use the REQP-# specific to the testcase</div></pre></td></tr></table></figure>
+<p> 使用上面的脚本可屏蔽此警告。</p>
+<h2 id="WARNING-RTSTAT-10"><a href="#WARNING-RTSTAT-10" class="headerlink" title="WARNING RTSTAT-10"></a>WARNING RTSTAT-10</h2><p>如果警告是位于再IP核内，那么可忽略。</p>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/03/Vivado警告归集/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/01/我是谁？/" class="archive-article-date">
-  	<time datetime="2020-03-01T10:47:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-01</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/03/01/我是谁？/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">我是谁？</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/01/我是谁？/">我是谁？</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/01/hello-world/" class="archive-article-date">
-  	<time datetime="2020-03-01T10:36:49.553Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/01/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -268,8 +366,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
